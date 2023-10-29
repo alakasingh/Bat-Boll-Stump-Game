@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket Game</title>
+</head>
+<style>
+  body{
+    text-align: center;
+  }
+</style>
+<body>
+  
+  <h1>Cricket Game🏏</h1>
+  <p>Criket Ball Stump Game - Lets choose one of them</p>
+
+  <button onclick="
+  alert('Your Choise is Ball⚽');
+  usrChoise='Ball';
+  //Computer choise 1 to 3
+  let randomChoise=Math.random() * 3;
+  let computerChoise;
+  if(randomChoise>0 &&  randomChoise<=1){
+    computerChoise='Ball';
+    alert('computer choise is Ball');
+  }
+   
+  if(randomChoise>1 &&  2>=randomChoise){
+    computerChoise='Bat';
+    alert('computer choise is Bat');
+  }
+   
+  if(randomChoise>2 &&  3>=randomChoise){
+    computerChoise='Stump';
+    alert('computer choise is Stump');
+  }
+   
+  if(computerChoise==='Ball' &&  usrChoise==='Ball'){
+    alert('Its a Tie');
+  }
+  if(computerChoise==='Bat' &&  usrChoise==='Ball'){
+    alert('Computer Won🏆');
+  }
+  if(computerChoise==='Stump' &&  usrChoise==='Ball'){
+    alert('You Won 🏆 Hurray🥳');
+  }
+  ">Ball⚽</button>
+  <Button
+    onclick="
+  alert('Your Choise is Bat🏏');
+  usrChoise='Bat';
+  //Computer choise 1 to 3
+  randomChoise=Math.random() * 3;
+  
+  if(randomChoise>0 &&  randomChoise<=1){
+    computerChoise='Ball';
+    alert('computer choise is Ball');
+  }
+   
+  if(randomChoise>1 &&  2>=randomChoise){
+    computerChoise='Bat';
+    alert('computer choise is Bat');
+  }
+   
+  if(randomChoise>2 &&  3>=randomChoise){
+    computerChoise='Stump';
+    alert('computer choise is Stump');
+  }
+   
+  if(computerChoise==='Ball' &&  usrChoise==='Bat'){
+    alert('You Won 🏆 Hurray🥳');
+  }
+  if(computerChoise==='Bat' &&  usrChoise==='Bat'){
+    alert('Its a Tie');
+  }
+  if(computerChoise==='Stump' &&  usrChoise==='Bat'){
+    alert('Computr Won🏆');
+  }
+  ">Bat🏏</Button>
+
+  <button onclick="
+  alert('Your Choise is Stump🪵');
+  usrChoise='Stump';
+  //Computer choise 1 to 3
+  randomChoise=Math.random() * 3;
+  
+  if(randomChoise>0 &&  randomChoise<=1){
+    computerChoise='Ball';
+    alert('computer choise is Ball');
+  }
+   
+  if(randomChoise>1 &&  2>=randomChoise){
+    computerChoise='Bat';
+    alert('computer choise is Bat');
+  }
+   
+  if(randomChoise>2 &&  3>=randomChoise){
+    computerChoise='Stump';
+    alert('computer choise is Stump');
+  }
+   
+  if(computerChoise==='Ball' &&  usrChoise==='Stump'){
+    alert('Computr Won🏆');
+  }
+  if(computerChoise==='Bat' &&  usrChoise==='Stump'){
+    alert('You Won 🏆 Hurray🥳');
+  }
+  if(computerChoise==='Stump' &&  usrChoise==='Stump'){
+    alert('Its a Tie');
+  }
+  ">Stump🪵</button>
+
+</body>
+</html>
